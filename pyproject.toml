@@ -1,0 +1,32 @@
+[project]
+name = "python-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.116.1",
+    "httpx>=0.28.1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "pytest>=8.4.1",
+    "ruff>=0.12.9",
+]
+
+
+[tool.mypy]
+strict = true
+disable_error_code = ["attr-defined", "import", "no-untyped-def", "assignment", "var-annotated"]
+python_version = "3.13"
+exclude = ["venv", ".*venv.*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py313"
+exclude = ["venv", ".*venv.*"]
+  
+[tool.ruff.isort]
+known-first-party = ["reverse_words"]
