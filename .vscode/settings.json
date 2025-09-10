@@ -4,6 +4,9 @@
   // Auto-imports & IntelliSense
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.diagnosticMode": "workspace",
   "editor.quickSuggestions": { "strings": true },
 
   // Testing (pytest)
@@ -32,5 +35,6 @@
   "python.linting.ruffPath": "${workspaceFolder}/.venv/Scripts/ruff.exe",
 
   // Ruff config file
-  "ruff.configuration": "${workspaceFolder}/pyproject.toml"
+  "ruff.configuration": "${workspaceFolder}/pyproject.toml",
+  "cursorpyright.analysis.autoImportCompletions": true
 }

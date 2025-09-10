@@ -2,7 +2,7 @@ import os
 from contextlib import contextmanager
 from typing import Generator
 
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel_traning import Session, SQLModel, create_engine
 
 # Get the directory where this file is located
 current_dir = os.path.dirname(os.path.abspath(__file__))

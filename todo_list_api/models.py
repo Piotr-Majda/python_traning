@@ -1,5 +1,5 @@
 import uuid
-from sqlmodel import Field, SQLModel, JSON, Column
+from sqlmodel_traning import Field, SQLModel, JSON, Column
 from datetime import datetime
 
 
